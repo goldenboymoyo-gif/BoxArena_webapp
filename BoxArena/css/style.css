@@ -1,0 +1,562 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*this is my header section*/
+
+nav{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.676);
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    width: 100%;
+}
+
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+nav div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-right: 30px;
+}
+
+nav div ul li a{
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: red;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+}
+
+.icons{
+    display: flex;
+    gap: 30px;
+    margin-right: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fi fi-rr-user{
+    color: #ffffff;
+    font-size: 20px;;
+    cursor: pointer;
+}
+
+.fi fi-rs-bell-notification-social-media{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fi fi-br-search{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo{
+    width: 40%;
+}
+.logo .imglogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.imglogo{
+    width: 100px;
+}
+
+/*this is my header and banner section*/
+.hero, .bg-vid{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+.bg-vid{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+}
+.bg-vid,video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    padding-top: 100px;
+    width: 50%;
+}
+.hero h1{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-top: 100px;
+}
+.hero h1 span{
+    color: red;
+    padding-top: 55px;
+    align-items: left;
+    position: relative;
+    right:285px
+}
+
+.hero p{
+    align-items: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+
+.btn{
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border-width:2px;
+    border-color: black;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.btn2{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: red;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    border-width:2px;
+    border-color: rgb(255, 0, 0);
+}
+
+.btn2:hover{
+    background-color: red;
+    border-width: 2pxpx;
+    border-color: black;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 20px;
+    cursor: pointer;
+    gap: 10px;
+    width: 20%;
+    margin-top: 200px;
+    height: 50vh;
+}
+.stat{
+    padding: 10px 20px;
+    border: 2px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.635);
+    width: 200px;
+}
+.stat:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.stat h2{
+        color: rgb(255, 255, 255);
+}
+.stat span{
+    color: rgb(255, 0, 0);
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.338);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    object-fit: cover;
+}
+
+/* this is my fighters section */
+
+.fighters{
+    width:100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 400px;
+    margin-top: 190px;
+    margin-bottom: 50px;
+}
+
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.top-bar h2{
+    font-size:18px;
+    letter-spacing:1px;
+    font-weight:700;
+    margin-top: 0px;
+}
+
+.top-bar p{
+    color:#000000;
+    text-decoration:none;
+    font-size:13px;
+    cursor: pointer;
+    padding-right: 20px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 10px;
+    padding-bottom: 18px;
+}
+
+.card{
+    background:linear-gradient(180deg,#ffffff,#ffffff);
+    border:1px solid rgba(255,80,80,0.45);
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s ease;
+    color: rgb(0, 0, 0);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#ff3b3b;
+    box-shadow:0 0 20px rgba(255,60,60,0.25);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.info{
+    padding:14px;
+}
+
+.info h3{
+    font-size:18px;
+    margin-bottom:6px;
+}
+
+.info p{
+    color:#000000;
+    font-size:14px;
+}
+
+/*this is my upcoming fights section*/
+
+.up-coming-fights{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.fights {
+    width: 100%;
+    margin-top: 10px;
+}
+.fights{
+    border: 1px solid red;
+}
+.fights{
+    border-radius: 10px;
+}
+.fights:hover{
+    transform:translateY(-4px);
+    box-shadow: 0 0 20px rgba(255,60,60,0.25);
+}
+.fight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.fight img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.boxer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vs {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+}
+
+.date {
+    text-align: right;
+}
+
+.date h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.date p {
+    font-size: 12px;
+    color: #000000;
+}
+
+/*this is my latest news*/
+
+.latest-news{
+    margin-top: 90px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.boxer img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 25%;
+}
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news .boxer{
+    border: 1px solid red;
+    gap: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.news .boxer:hover{
+    transform:translateY(-4px);
+    box-shadow: 0 0 20px rgba(255,60,60,0.25);
+}
+
+/*this is my rankings section*/
+.rankings{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.rankings .africa{
+    margin-left: 880px;
+}
+.top-bar p{
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.rankings .status,
+.rankings .details {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+
+.rankings .status {
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.rankings .details {
+    border-bottom: 1px solid #ddd;
+}
+
+.boxer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@media(max-width:768px){
+    .card img{
+        height:200px;
+    }
+}
+/*this is my about section*/
+.about {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 80px 10%;
+}
+
+.about-container {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-header h1 {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-header p {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid red;
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+}
+
+.about-card h2 {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.about-card p {
+    color: #000000;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .about-header h1{
+        font-size: 2rem;
+    }
+}
+
+/*this is my footer section*/
+footer{
+    background: #111;
+}
+
+.copy{
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright{
+    color: white;
+    font-size: 14px;
+}
