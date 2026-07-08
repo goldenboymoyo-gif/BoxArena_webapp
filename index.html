@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BoxArena – Africa's Premier Boxing Platform</title>
-<meta name="description" content="BoxArena connects brands with Africa's billion-dollar boxing market. 50K+ fighters, 500+ annual events, 2M+ monthly audience.">
+<title>BoxArena &ndash; Africa's Boxing Platform</title>
+<meta name="description" content="BoxArena - Africa's premier boxing platform. Watch fights, track rankings, connect with fighters.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,22 +34,34 @@
       <li><a href="#events" class="nav-link">Events</a></li>
       <li><a href="#news" class="nav-link">News</a></li>
       <li><a href="#rankings" class="nav-link">Rankings</a></li>
-      <li><a href="#invest" class="nav-link btn-nav">Invest</a></li>
+      <li><a href="#watch" class="nav-link watch-link">Watch Fights</a></li>
+      <li class="nav-icons">
+        <i class="fi fi-br-search" id="search-btn"></i>
+        <a href="#" class="btn-nav-signup" id="signup-btn">Sign Up</a>
+        <a href="#" class="btn-nav-login" id="login-btn">Login</a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <section class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/zXeC-RPk65I?autoplay=1&mute=1&loop=1&playlist=zXeC-RPk65I&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&playsinline=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-text">
-      <span class="hero-tag">Official WBA Africa Digital Partner</span>
-      <h1>Africa's Billion-Dollar<br><span>Boxing Market</span></h1>
-      <p>Connect your brand with the fastest-growing combat sports audience on the continent. 54 nations. 500+ annual events. Undisputed reach.</p>
+      <span class="hero-tag">#1 African Boxing Platform</span>
+      <h1>Where Africa<br><span>Fights</span></h1>
+      <p>Live fights. Breaking news. Fighter profiles. Rankings. All in one place.</p>
       <div class="hero-buttons">
-        <a href="#invest" class="btn btn-primary">Become a Partner</a>
-        <a href="#fighters" class="btn btn-outline">Explore Talent</a>
+        <a href="#watch" class="btn btn-primary">Watch Fights</a>
+        <a href="#fighters" class="btn btn-outline">Explore</a>
       </div>
     </div>
     <div class="hero-metrics">
@@ -59,7 +71,7 @@
       </div>
       <div class="metric">
         <span class="metric-value" data-count="500">0</span><span class="metric-suffix">+</span>
-        <span class="metric-label">Events / Year</span>
+        <span class="metric-label">Events</span>
       </div>
       <div class="metric">
         <span class="metric-value" data-count="54">0</span>
@@ -67,30 +79,8 @@
       </div>
       <div class="metric">
         <span class="metric-value" data-count="2">0</span><span class="metric-suffix">M+</span>
-        <span class="metric-label">Monthly Reach</span>
+        <span class="metric-label">Fans</span>
       </div>
-    </div>
-  </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<section class="partners">
-  <div class="partners-container">
-    <span class="partners-label">Trusted by leading organisations</span>
-    <div class="partners-track">
-      <span>WBA Africa</span>
-      <span>NBF Nigeria</span>
-      <span>Boxing SA</span>
-      <span>African Boxing Union</span>
-      <span>WBF</span>
-      <span>WBA Africa</span>
-      <span>NBF Nigeria</span>
-      <span>Boxing SA</span>
-      <span>African Boxing Union</span>
-      <span>WBF</span>
     </div>
   </div>
 </section>
@@ -100,9 +90,9 @@
     <div>
       <span class="section-eyebrow">Elite Athletes</span>
       <h2>Featured Fighters</h2>
-      <p class="section-sub">Africa's finest talent. Click any fighter for full profile.</p>
+      <p class="section-sub">Click any fighter for full profile, stats and fight history.</p>
     </div>
-    <a href="#rankings" class="btn btn-ghost">View Rankings &rarr;</a>
+    <a href="#rankings" class="btn btn-ghost">Full Rankings &rarr;</a>
   </div>
   <div class="fighters-grid">
     <div class="fighter-card" data-fighter="ajagba">
@@ -113,14 +103,8 @@
       <div class="fighter-body">
         <span class="fighter-country">Nigeria</span>
         <h3>Efe Ajagba</h3>
-        <div class="fighter-record">
-          <span>21-1-1</span>
-          <span class="fighter-kos">14 KOs</span>
-        </div>
-        <div class="fighter-achievements">
-          <span>WBA Africa Champion</span>
-          <span>2016 Olympian</span>
-        </div>
+        <div class="fighter-record"><span>21-1-1</span><span class="fighter-kos">14 KOs</span></div>
+        <div class="fighter-achievements"><span>WBA Africa Champion</span><span>2016 Olympian</span></div>
       </div>
     </div>
     <div class="fighter-card" data-fighter="lerena">
@@ -131,14 +115,8 @@
       <div class="fighter-body">
         <span class="fighter-country">South Africa</span>
         <h3>Kevin Lerena</h3>
-        <div class="fighter-record">
-          <span>31-4</span>
-          <span class="fighter-kos">15 KOs</span>
-        </div>
-        <div class="fighter-achievements">
-          <span>WBC Champion</span>
-          <span>IBO Champion</span>
-        </div>
+        <div class="fighter-record"><span>31-4</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>WBC Champion</span><span>IBO Champion</span></div>
       </div>
     </div>
     <div class="fighter-card" data-fighter="bakole">
@@ -149,14 +127,8 @@
       <div class="fighter-body">
         <span class="fighter-country">DR Congo</span>
         <h3>Martin Bakole</h3>
-        <div class="fighter-record">
-          <span>21-1-1</span>
-          <span class="fighter-kos">15 KOs</span>
-        </div>
-        <div class="fighter-achievements">
-          <span>WBA Africa Champion</span>
-          <span>IBF Top 10</span>
-        </div>
+        <div class="fighter-record"><span>21-1-1</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>WBA Africa</span><span>IBF Top 10</span></div>
       </div>
     </div>
     <div class="fighter-card" data-fighter="dogboe">
@@ -167,14 +139,8 @@
       <div class="fighter-body">
         <span class="fighter-country">Ghana</span>
         <h3>Isaac Dogboe</h3>
-        <div class="fighter-record">
-          <span>26-4</span>
-          <span class="fighter-kos">15 KOs</span>
-        </div>
-        <div class="fighter-achievements">
-          <span>Former WBO Champion</span>
-          <span>2012 Olympian</span>
-        </div>
+        <div class="fighter-record"><span>26-4</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>Ex-WBO Champion</span><span>2012 Olympian</span></div>
       </div>
     </div>
     <div class="fighter-card" data-fighter="nontshinga">
@@ -185,14 +151,8 @@
       <div class="fighter-body">
         <span class="fighter-country">South Africa</span>
         <h3>Sivenathi Nontshinga</h3>
-        <div class="fighter-record">
-          <span>13-1</span>
-          <span class="fighter-kos">10 KOs</span>
-        </div>
-        <div class="fighter-achievements">
-          <span>IBF World Champion</span>
-          <span>2 Title Defenses</span>
-        </div>
+        <div class="fighter-record"><span>13-1</span><span class="fighter-kos">10 KOs</span></div>
+        <div class="fighter-achievements"><span>IBF World Champion</span><span>2 Defenses</span></div>
       </div>
     </div>
     <div class="fighter-card" data-fighter="akpejiori">
@@ -203,14 +163,8 @@
       <div class="fighter-body">
         <span class="fighter-country">Nigeria</span>
         <h3>Raphael Akpejiori</h3>
-        <div class="fighter-record">
-          <span>16-1</span>
-          <span class="fighter-kos">15 KOs</span>
-        </div>
-        <div class="fighter-achievements">
-          <span>WBA Africa #5</span>
-          <span>94% KO Rate</span>
-        </div>
+        <div class="fighter-record"><span>16-1</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>WBA Africa #5</span><span>94% KO Rate</span></div>
       </div>
     </div>
   </div>
@@ -221,9 +175,8 @@
     <div>
       <span class="section-eyebrow">Fight Calendar</span>
       <h2>Upcoming Events</h2>
-      <p class="section-sub">Major bouts featuring African talent. Click for sponsorship opportunities.</p>
+      <p class="section-sub">Click any event for full details and ticket info.</p>
     </div>
-    <a href="#" class="btn btn-ghost">Full Schedule &rarr;</a>
   </div>
   <div class="events-list">
     <div class="event-card featured" data-event="ajagba-bakole">
@@ -232,18 +185,12 @@
         <div class="event-matchup">
           <div class="event-fighter">
             <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Efe Ajagba">
-            <div>
-              <strong>Efe Ajagba</strong>
-              <span>Nigeria, 21-1-1</span>
-            </div>
+            <div><strong>Efe Ajagba</strong><span>Nigeria, 21-1-1</span></div>
           </div>
           <div class="event-vs">VS</div>
           <div class="event-fighter">
             <img src="./images/Hero_section.jpg" alt="Martin Bakole">
-            <div>
-              <strong>Martin Bakole</strong>
-              <span>DR Congo, 21-1-1</span>
-            </div>
+            <div><strong>Martin Bakole</strong><span>DR Congo, 21-1-1</span></div>
           </div>
         </div>
         <div class="event-info">
@@ -252,28 +199,18 @@
           <div class="event-promoter">Queensberry Promotions</div>
         </div>
       </div>
-      <div class="event-cta">
-        <span class="event-sponsor-tag">Sponsorship Available</span>
-        <button class="btn btn-small btn-primary">Inquire</button>
-      </div>
     </div>
     <div class="event-card" data-event="lerena-okolie">
       <div class="event-main">
         <div class="event-matchup">
           <div class="event-fighter">
             <img src="./images/bright.jpg" alt="Kevin Lerena">
-            <div>
-              <strong>Kevin Lerena</strong>
-              <span>South Africa, 31-4</span>
-            </div>
+            <div><strong>Kevin Lerena</strong><span>South Africa, 31-4</span></div>
           </div>
           <div class="event-vs">VS</div>
           <div class="event-fighter">
             <img src="./images/ryan.jpg" alt="Lawrence Okolie">
-            <div>
-              <strong>Lawrence Okolie</strong>
-              <span>UK, 21-1</span>
-            </div>
+            <div><strong>Lawrence Okolie</strong><span>UK, 21-1</span></div>
           </div>
         </div>
         <div class="event-info">
@@ -282,28 +219,18 @@
           <div class="event-promoter">Matchroom Boxing</div>
         </div>
       </div>
-      <div class="event-cta">
-        <span class="event-sponsor-tag">Sponsorship Available</span>
-        <button class="btn btn-small btn-primary">Inquire</button>
-      </div>
     </div>
     <div class="event-card" data-event="nontshinga-defense">
       <div class="event-main">
         <div class="event-matchup">
           <div class="event-fighter">
             <img src="./images/Pitius.jpg" alt="Sivenathi Nontshinga">
-            <div>
-              <strong>Sivenathi Nontshinga</strong>
-              <span>South Africa, 13-1</span>
-            </div>
+            <div><strong>Sivenathi Nontshinga</strong><span>South Africa, 13-1</span></div>
           </div>
           <div class="event-vs">VS</div>
           <div class="event-fighter">
             <img src="./images/Hero_section.jpg" alt="TBA">
-            <div>
-              <strong>TBA</strong>
-              <span>Mandatory Challenger</span>
-            </div>
+            <div><strong>TBA</strong><span>Mandatory Challenger</span></div>
           </div>
         </div>
         <div class="event-info">
@@ -312,10 +239,6 @@
           <div class="event-promoter">Boxing SA</div>
         </div>
       </div>
-      <div class="event-cta">
-        <span class="event-sponsor-tag">Title Defense</span>
-        <button class="btn btn-small btn-primary">Inquire</button>
-      </div>
     </div>
   </div>
 </section>
@@ -323,9 +246,9 @@
 <section class="section news" id="news">
   <div class="section-header">
     <div>
-      <span class="section-eyebrow">Latest Updates</span>
+      <span class="section-eyebrow">Latest</span>
       <h2>Boxing News</h2>
-      <p class="section-sub">African boxing headlines. Click to read full story.</p>
+      <p class="section-sub">Click any story to read the full article.</p>
     </div>
   </div>
   <div class="news-grid">
@@ -336,7 +259,6 @@
       </div>
       <div class="news-body">
         <h3>Ajagba vs Bakole Rematch Set for August 29 at Wembley</h3>
-        <p>All-African heavyweight showdown headlines Queensberry card in London.</p>
         <div class="news-meta">
           <time>Jul 1, 2026</time>
           <span class="news-read">Read</span>
@@ -349,8 +271,7 @@
         <span class="news-cat">Title Fight</span>
       </div>
       <div class="news-body">
-        <h3>Lerena Defends WBC Bridgerweight Title Against Okolie</h3>
-        <p>South African champion moves up to heavyweight for Wembley showdown.</p>
+        <h3>Lerena Defends WBC Title Against Okolie at Wembley</h3>
         <div class="news-meta">
           <time>Jun 28, 2026</time>
           <span class="news-read">Read</span>
@@ -359,12 +280,11 @@
     </article>
     <article class="news-card" data-news="nbf-calendar">
       <div class="news-img">
-        <img src="./images/Boxing.jpg" alt="NBF Calendar">
+        <img src="./images/Boxing.jpg" alt="NBF">
         <span class="news-cat">Development</span>
       </div>
       <div class="news-body">
-        <h3>Nigeria Boxing Federation Unveils 2026 Development Roadmap</h3>
-        <p>Comprehensive programme to drive grassroots-to-global boxing growth.</p>
+        <h3>Nigeria Boxing Federation Unveils 2026 Development Plan</h3>
         <div class="news-meta">
           <time>Jun 20, 2026</time>
           <span class="news-read">Read</span>
@@ -377,8 +297,7 @@
         <span class="news-cat">Championship</span>
       </div>
       <div class="news-body">
-        <h3>Nontshinga to Defend IBF Light Flyweight Title in September</h3>
-        <p>South African world champion returns to Eastern Cape for mandatory.</p>
+        <h3>Nontshinga to Defend IBF World Title in September</h3>
         <div class="news-meta">
           <time>Jun 15, 2026</time>
           <span class="news-read">Read</span>
@@ -413,69 +332,31 @@
   </div>
 </section>
 
-<section class="section invest" id="invest">
-  <div class="invest-container">
-    <div class="invest-content">
-      <span class="section-eyebrow light">Partner With Us</span>
-      <h2>Invest in Africa's Boxing Future</h2>
-      <p>BoxArena is the continent's premier boxing media platform. We connect global brands with Africa's passionate fight audience across 54 nations.</p>
-      <div class="invest-metrics">
-        <div class="invest-metric">
-          <span class="invest-num">2M+</span>
-          <span class="invest-label">Monthly Impressions</span>
-        </div>
-        <div class="invest-metric">
-          <span class="invest-num">54</span>
-          <span class="invest-label">African Countries</span>
-        </div>
-        <div class="invest-metric">
-          <span class="invest-num">85%</span>
-          <span class="invest-label">Male 18-45 Demographic</span>
-        </div>
-        <div class="invest-metric">
-          <span class="invest-num">12M+</span>
-          <span class="invest-label">Annual Video Views</span>
-        </div>
-      </div>
-      <div class="invest-tiers">
-        <div class="tier">
-          <h4>Bronze</h4>
-          <p class="tier-price">$5K<span>/mo</span></p>
-          <ul>
-            <li>Logo on event pages</li>
-            <li>Social media mentions</li>
-            <li>Monthly report</li>
-          </ul>
-        </div>
-        <div class="tier featured-tier">
-          <div class="tier-badge">Popular</div>
-          <h4>Silver</h4>
-          <p class="tier-price">$15K<span>/mo</span></p>
-          <ul>
-            <li>All Bronze benefits</li>
-            <li>Ringside branding</li>
-            <li>Fighter ambassador program</li>
-            <li>Exclusive content series</li>
-          </ul>
-        </div>
-        <div class="tier">
-          <h4>Gold</h4>
-          <p class="tier-price">$30K<span>/mo</span></p>
-          <ul>
-            <li>All Silver benefits</li>
-            <li>Title sponsorship</li>
-            <li>VIP event access</li>
-            <li>TV/streaming integration</li>
-            <li>Dedicated account manager</li>
-          </ul>
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary btn-large">Book a Discovery Call</a>
+<section class="section partners" id="partners">
+  <div class="partners-container">
+    <span class="partners-label">In Partnership With</span>
+    <div class="partners-track">
+      <span>WBA Africa</span>
+      <span>NBF Nigeria</span>
+      <span>Boxing SA</span>
+      <span>African Boxing Union</span>
+      <span>WBF</span>
+      <span>ProBox TV</span>
+      <span>DAZN Boxing</span>
+      <span>BoxingScene</span>
+      <span>WBA Africa</span>
+      <span>NBF Nigeria</span>
+      <span>Boxing SA</span>
+      <span>African Boxing Union</span>
+      <span>WBF</span>
+      <span>ProBox TV</span>
+      <span>DAZN Boxing</span>
+      <span>BoxingScene</span>
     </div>
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="footer-container">
     <div class="footer-top">
       <div class="footer-brand">
@@ -489,22 +370,32 @@
         </div>
       </div>
       <div class="footer-links">
-        <h4>Platform</h4>
-        <ul><li><a href="#fighters">Fighters</a></li><li><a href="#events">Events</a></li><li><a href="#news">News</a></li><li><a href="#rankings">Rankings</a></li></ul>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#fighters">Fighters</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#rankings">Rankings</a></li>
+          <li><a href="#watch">Watch Fights</a></li>
+        </ul>
       </div>
       <div class="footer-links">
         <h4>Partners</h4>
-        <ul><li><a href="#">WBA Africa</a></li><li><a href="#">NBF Nigeria</a></li><li><a href="#">Boxing SA</a></li><li><a href="#">African Boxing Union</a></li></ul>
+        <ul>
+          <li><a href="https://www.youtube.com/@ProBoxTV" target="_blank">ProBox TV</a></li>
+          <li><a href="#">WBA Africa</a></li>
+          <li><a href="#">NBF Nigeria</a></li>
+          <li><a href="#">Boxing SA</a></li>
+        </ul>
       </div>
       <div class="footer-contact">
         <h4>Contact</h4>
-        <p><a href="mailto:partners@boxarena.africa">partners@boxarena.africa</a></p>
-        <p><a href="tel:+23480026927362">+234 800 BOXARENA</a></p>
-        <p>Lagos, Nigeria &bull; Johannesburg, SA</p>
+        <p><a href="mailto:info@boxarena.africa">info@boxarena.africa</a></p>
+        <p>Lagos &middot; Johannesburg &middot; Accra</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 BoxArena. All rights reserved. Official WBA Africa digital partner.</p>
+      <p>&copy; 2026 BoxArena. All rights reserved.</p>
     </div>
   </div>
 </footer>
