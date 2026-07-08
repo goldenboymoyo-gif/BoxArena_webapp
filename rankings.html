@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rankings &ndash; BoxArena</title>
+<meta name="description" content="BoxArena official boxing rankings - WBA Africa heavyweight rankings and BoxArena Pound-for-Pound top 10.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<style>
+.ranking-section { padding: 40px 0; }
+.ranking-section:first-of-type { padding-top: 0; }
+</style>
+</head>
+<body>
+
+<div id="modal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="fighters.html" class="nav-link">Fighters</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="news.html" class="nav-link">News</a></li>
+      <li><a href="rankings.html" class="nav-link active">Rankings</a></li>
+      <li><a href="watch.html" class="nav-link">Watch</a></li>
+      <li><a href="moments.html" class="nav-link">Moments</a></li>
+      <li><a href="live.html" class="nav-link live-link">Live</a></li>
+      <li class="nav-icons">
+        <i class="fi fi-br-search" id="search-btn"></i>
+        <a href="#" class="btn-nav-signup" id="signup-btn">Sign Up</a>
+        <a href="#" class="btn-nav-login" id="login-btn">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="nav-page-indicator">Rankings</div>
+
+<section class="section rankings-page" id="rankings">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">Official Ratings</span>
+      <h2>BoxArena Rankings</h2>
+      <p class="section-sub">The definitive African boxing rankings, updated monthly. Featuring WBA Africa official ratings and BoxArena's independent Pound-for-Pound list.</p>
+    </div>
+  </div>
+
+  <div class="rankings-container">
+    <div class="ranking-section">
+      <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:16px;">WBA Africa Heavyweight</h3>
+      <div class="rankings-table-wrapper">
+        <table class="rankings-table">
+          <thead>
+            <tr><th>Rank</th><th>Fighter</th><th>Country</th><th>Record</th><th>Title</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="rank-badge champ">C</span></td><td class="rank-name"><img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt=""><span>Emanuel Odiase</span></td><td>Germany</td><td>15-0 (12 KOs)</td><td><span class="title-tag gold">Champion</span></td></tr>
+            <tr><td><span class="rank-badge">1</span></td><td class="rank-name"><img src="./images/Hero_section.jpg" alt=""><span>Martin Bakole</span></td><td>DR Congo</td><td>21-1-1 (15 KOs)</td><td><span class="title-tag">Contender</span></td></tr>
+            <tr><td><span class="rank-badge">2</span></td><td class="rank-name"><img src="./images/Boxing.jpg" alt=""><span>Chibuihe Ogbuagu</span></td><td>Nigeria</td><td>12-0 (8 KOs)</td><td><span class="title-tag">Contender</span></td></tr>
+            <tr><td><span class="rank-badge">3</span></td><td class="rank-name"><img src="./images/bright.jpg" alt=""><span>Kevin Lerena</span></td><td>South Africa</td><td>31-4 (15 KOs)</td><td><span class="title-tag">Contender</span></td></tr>
+            <tr><td><span class="rank-badge">4</span></td><td class="rank-name"><img src="./images/Pitius.jpg" alt=""><span>Juan Alberts</span></td><td>South Africa</td><td>18-2 (10 KOs)</td><td><span class="title-tag">Contender</span></td></tr>
+            <tr><td><span class="rank-badge">5</span></td><td class="rank-name"><img src="./images/ryan.jpg" alt=""><span>Raphael Akpejiori</span></td><td>Nigeria</td><td>16-1 (15 KOs)</td><td><span class="title-tag">Contender</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="ranking-section">
+      <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:16px;">BoxArena Pound-for-Pound Top 10</h3>
+      <div class="rankings-table-wrapper">
+        <table class="rankings-table">
+          <thead>
+            <tr><th>Rank</th><th>Fighter</th><th>Country</th><th>Record</th><th>Weight</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="rank-badge champ">1</span></td><td class="rank-name"><img src="./images/Hero_section.jpg" alt=""><span>Naoya Inoue</span></td><td>Japan</td><td>33-0 (27 KOs)</td><td>Super Bantamweight</td></tr>
+            <tr><td><span class="rank-badge">2</span></td><td class="rank-name"><img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt=""><span>Oleksandr Usyk</span></td><td>Ukraine</td><td>25-0 (16 KOs)</td><td>Heavyweight</td></tr>
+            <tr><td><span class="rank-badge">3</span></td><td class="rank-name"><img src="./images/bright.jpg" alt=""><span>Shakur Stevenson</span></td><td>USA</td><td>25-0 (11 KOs)</td><td>Lightweight</td></tr>
+            <tr><td><span class="rank-badge">4</span></td><td class="rank-name"><img src="./images/Boxing.jpg" alt=""><span>Jesse Rodriguez</span></td><td>USA</td><td>24-0 (17 KOs)</td><td>Super Flyweight</td></tr>
+            <tr><td><span class="rank-badge">5</span></td><td class="rank-name"><img src="./images/Pitius.jpg" alt=""><span>David Benavidez</span></td><td>USA</td><td>32-0 (26 KOs)</td><td>Light Heavyweight</td></tr>
+            <tr><td><span class="rank-badge">6</span></td><td class="rank-name"><img src="./images/ryan.jpg" alt=""><span>Canelo Alvarez</span></td><td>Mexico</td><td>63-2-2 (39 KOs)</td><td>Super Middleweight</td></tr>
+            <tr><td><span class="rank-badge">7</span></td><td class="rank-name"><img src="./images/Hero_section.jpg" alt=""><span>Katie Taylor</span></td><td>Ireland</td><td>25-1 (6 KOs)</td><td>Lightweight</td></tr>
+            <tr><td><span class="rank-badge">8</span></td><td class="rank-name"><img src="./images/bright.jpg" alt=""><span>Bam Rodriguez</span></td><td>USA</td><td>23-0 (14 KOs)</td><td>Super Flyweight</td></tr>
+            <tr><td><span class="rank-badge">9</span></td><td class="rank-name"><img src="./images/Boxing.jpg" alt=""><span>Jaron Ennis</span></td><td>USA</td><td>33-1 (29 KOs)</td><td>Welterweight</td></tr>
+            <tr><td><span class="rank-badge">10</span></td><td class="rank-name"><img src="./images/Pitius.jpg" alt=""><span>Teofimo Lopez</span></td><td>USA</td><td>21-1 (13 KOs)</td><td>Welterweight</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--gray-400);font-size:12px;margin-top:12px;">Rankings updated July 2026 &bull; Based on BoxArena independent assessment in partnership with The Ring Magazine criteria.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+        <p>Africa's premier boxing platform. Connecting fighters, promoters, sponsors, and fans across 54 nations.</p>
+        <div class="footer-social">
+          <i class="fi fi-brands-instagram"></i><i class="fi fi-brands-twitter"></i><i class="fi fi-brands-facebook"></i><i class="fi fi-brands-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="fighters.html">Fighters</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="watch.html">Watch Fights</a></li>
+          <li><a href="moments.html">Moments</a></li>
+          <li><a href="live.html">Live</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@ProBoxTV" target="_blank">ProBox TV</a></li>
+          <li><a href="https://www.youtube.com/@DAZNBoxing" target="_blank">DAZN Boxing</a></li>
+          <li><a href="#">WBA Africa</a></li>
+          <li><a href="#">NBF Nigeria</a></li>
+          <li><a href="#">Boxing SA</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@boxarena.africa">info@boxarena.africa</a></p>
+        <p>Lagos &middot; Johannesburg &middot; Accra</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BoxArena. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

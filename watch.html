@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Fights &ndash; BoxArena</title>
+<meta name="description" content="BoxArena watch fights - live and recent boxing action from ProBox TV, DAZN Boxing, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="modal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="fighters.html" class="nav-link">Fighters</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="news.html" class="nav-link">News</a></li>
+      <li><a href="rankings.html" class="nav-link">Rankings</a></li>
+      <li><a href="watch.html" class="nav-link active">Watch</a></li>
+      <li><a href="moments.html" class="nav-link">Moments</a></li>
+      <li><a href="live.html" class="nav-link live-link">Live</a></li>
+      <li class="nav-icons">
+        <i class="fi fi-br-search" id="search-btn"></i>
+        <a href="#" class="btn-nav-signup" id="signup-btn">Sign Up</a>
+        <a href="#" class="btn-nav-login" id="login-btn">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="watch-page">
+  <div class="watch-container">
+    <div class="watch-header">
+      <h1>Watch Fights</h1>
+      <p>Latest boxing action from the world's top fight channels. Click to watch full fights, highlights, and analysis.</p>
+    </div>
+    <div class="watch-grid">
+      <div class="watch-channel">
+        <div class="watch-channel-header">
+          <i class="fi fi-brands-youtube" style="color:var(--red);font-size:1.5rem;"></i>
+          <div><h3>ProBox TV</h3><span>Latest Fights & Highlights</span></div>
+        </div>
+        <div class="youtube-embed">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=UUT7Mm-aRWBZ1Zd2bIXIEsyg" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="watch-channel-footer">
+          <a href="https://www.youtube.com/@ProBoxTV" target="_blank">Visit ProBox TV Channel &rarr;</a>
+        </div>
+      </div>
+      <div class="watch-channel">
+        <div class="watch-channel-header">
+          <i class="fi fi-brands-youtube" style="color:var(--red);font-size:1.5rem;"></i>
+          <div><h3>DAZN Boxing</h3><span>The Global Home of Boxing</span></div>
+        </div>
+        <div class="youtube-embed">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=UUrvRE5fGcdUgCYWgh-BDsg" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="watch-channel-footer">
+          <a href="https://www.youtube.com/@DAZNBoxing" target="_blank">Visit DAZN Boxing Channel &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;color:var(--gray-400);font-size:14px;">
+      <p>More channels coming soon. BoxArena is partnering with additional promoters and broadcasters to bring you more live content.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" style="margin-top:0;">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+        <p>Africa's premier boxing platform. Connecting fighters, promoters, sponsors, and fans across 54 nations.</p>
+        <div class="footer-social">
+          <i class="fi fi-brands-instagram"></i><i class="fi fi-brands-twitter"></i><i class="fi fi-brands-facebook"></i><i class="fi fi-brands-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="fighters.html">Fighters</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="watch.html">Watch Fights</a></li>
+          <li><a href="moments.html">Moments</a></li>
+          <li><a href="live.html">Live</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@ProBoxTV" target="_blank">ProBox TV</a></li>
+          <li><a href="https://www.youtube.com/@DAZNBoxing" target="_blank">DAZN Boxing</a></li>
+          <li><a href="#">WBA Africa</a></li>
+          <li><a href="#">NBF Nigeria</a></li>
+          <li><a href="#">Boxing SA</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@boxarena.africa">info@boxarena.africa</a></p>
+        <p>Lagos &middot; Johannesburg &middot; Accra</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BoxArena. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

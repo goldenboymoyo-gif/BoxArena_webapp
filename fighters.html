@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fighters &ndash; BoxArena</title>
+<meta name="description" content="BoxArena fighter profiles - stats, records, and bios for Africa's top boxing talent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="modal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="fighters.html" class="nav-link active">Fighters</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="news.html" class="nav-link">News</a></li>
+      <li><a href="rankings.html" class="nav-link">Rankings</a></li>
+      <li><a href="watch.html" class="nav-link">Watch</a></li>
+      <li><a href="moments.html" class="nav-link">Moments</a></li>
+      <li><a href="live.html" class="nav-link live-link">Live</a></li>
+      <li class="nav-icons">
+        <i class="fi fi-br-search" id="search-btn"></i>
+        <a href="#" class="btn-nav-signup" id="signup-btn">Sign Up</a>
+        <a href="#" class="btn-nav-login" id="login-btn">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="nav-page-indicator">Fighters</div>
+
+<section class="section fighters" id="fighters">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">Elite Athletes</span>
+      <h2>Featured Fighters</h2>
+      <p class="section-sub">Click any fighter for full profile, stats and fight history. Profiles include records, physical measurements, and career highlights.</p>
+    </div>
+    <a href="rankings.html" class="btn btn-ghost">Full Rankings &rarr;</a>
+  </div>
+  <div class="fighters-grid">
+    <div class="fighter-card" data-fighter="ajagba">
+      <div class="fighter-img">
+        <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Efe Ajagba">
+        <div class="fighter-weight">Heavyweight</div>
+      </div>
+      <div class="fighter-body">
+        <span class="fighter-country">Nigeria</span>
+        <h3>Efe Ajagba</h3>
+        <div class="fighter-record"><span>21-1-1</span><span class="fighter-kos">14 KOs</span></div>
+        <div class="fighter-achievements"><span>WBA Africa Champion</span><span>2016 Olympian</span></div>
+      </div>
+    </div>
+    <div class="fighter-card" data-fighter="lerena">
+      <div class="fighter-img">
+        <img src="./images/bright.jpg" alt="Kevin Lerena">
+        <div class="fighter-weight">Bridgerweight</div>
+      </div>
+      <div class="fighter-body">
+        <span class="fighter-country">South Africa</span>
+        <h3>Kevin Lerena</h3>
+        <div class="fighter-record"><span>31-4</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>WBC Champion</span><span>IBO Champion</span></div>
+      </div>
+    </div>
+    <div class="fighter-card" data-fighter="bakole">
+      <div class="fighter-img">
+        <img src="./images/Hero_section.jpg" alt="Martin Bakole">
+        <div class="fighter-weight">Heavyweight</div>
+      </div>
+      <div class="fighter-body">
+        <span class="fighter-country">DR Congo</span>
+        <h3>Martin Bakole</h3>
+        <div class="fighter-record"><span>21-1-1</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>WBA Africa</span><span>IBF Top 10</span></div>
+      </div>
+    </div>
+    <div class="fighter-card" data-fighter="dogboe">
+      <div class="fighter-img">
+        <img src="./images/Boxing.jpg" alt="Isaac Dogboe">
+        <div class="fighter-weight">Featherweight</div>
+      </div>
+      <div class="fighter-body">
+        <span class="fighter-country">Ghana</span>
+        <h3>Isaac Dogboe</h3>
+        <div class="fighter-record"><span>26-4</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>Ex-WBO Champion</span><span>2012 Olympian</span></div>
+      </div>
+    </div>
+    <div class="fighter-card" data-fighter="nontshinga">
+      <div class="fighter-img">
+        <img src="./images/Pitius.jpg" alt="Sivenathi Nontshinga">
+        <div class="fighter-weight">Light Flyweight</div>
+      </div>
+      <div class="fighter-body">
+        <span class="fighter-country">South Africa</span>
+        <h3>Sivenathi Nontshinga</h3>
+        <div class="fighter-record"><span>13-1</span><span class="fighter-kos">10 KOs</span></div>
+        <div class="fighter-achievements"><span>IBF World Champion</span><span>2 Defenses</span></div>
+      </div>
+    </div>
+    <div class="fighter-card" data-fighter="akpejiori">
+      <div class="fighter-img">
+        <img src="./images/ryan.jpg" alt="Raphael Akpejiori">
+        <div class="fighter-weight">Heavyweight</div>
+      </div>
+      <div class="fighter-body">
+        <span class="fighter-country">Nigeria</span>
+        <h3>Raphael Akpejiori</h3>
+        <div class="fighter-record"><span>16-1</span><span class="fighter-kos">15 KOs</span></div>
+        <div class="fighter-achievements"><span>WBA Africa #5</span><span>94% KO Rate</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+        <p>Africa's premier boxing platform. Connecting fighters, promoters, sponsors, and fans across 54 nations.</p>
+        <div class="footer-social">
+          <i class="fi fi-brands-instagram"></i><i class="fi fi-brands-twitter"></i><i class="fi fi-brands-facebook"></i><i class="fi fi-brands-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="fighters.html">Fighters</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="watch.html">Watch Fights</a></li>
+          <li><a href="moments.html">Moments</a></li>
+          <li><a href="live.html">Live</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@ProBoxTV" target="_blank">ProBox TV</a></li>
+          <li><a href="https://www.youtube.com/@DAZNBoxing" target="_blank">DAZN Boxing</a></li>
+          <li><a href="#">WBA Africa</a></li>
+          <li><a href="#">NBF Nigeria</a></li>
+          <li><a href="#">Boxing SA</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@boxarena.africa">info@boxarena.africa</a></p>
+        <p>Lagos &middot; Johannesburg &middot; Accra</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BoxArena. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

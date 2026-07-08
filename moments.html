@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moments &ndash; BoxArena</title>
+<meta name="description" content="BoxArena moments - the best boxing highlights, knockouts, and behind-the-scenes content from the boxing world.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="modal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="fighters.html" class="nav-link">Fighters</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="news.html" class="nav-link">News</a></li>
+      <li><a href="rankings.html" class="nav-link">Rankings</a></li>
+      <li><a href="watch.html" class="nav-link">Watch</a></li>
+      <li><a href="moments.html" class="nav-link active">Moments</a></li>
+      <li><a href="live.html" class="nav-link live-link">Live</a></li>
+      <li class="nav-icons">
+        <i class="fi fi-br-search" id="search-btn"></i>
+        <a href="#" class="btn-nav-signup" id="signup-btn">Sign Up</a>
+        <a href="#" class="btn-nav-login" id="login-btn">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="nav-page-indicator">Moments</div>
+
+<section class="moments-page">
+  <div class="moments-container">
+    <div class="moments-header">
+      <h1>Moments</h1>
+      <p>The best highlights, knockouts, training footage, and behind-the-scenes content from the boxing world.</p>
+    </div>
+    <div class="moments-feed">
+      <div class="moment-card">
+        <div class="moment-header">
+          <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="BoxArena" class="moment-avatar">
+          <div>
+            <span class="moment-author">BoxArena</span>
+            <span class="moment-time">2 hours ago</span>
+          </div>
+        </div>
+        <div class="moment-media" style="background:#1a1a2e;display:flex;align-items:center;justify-content:center;height:300px;">
+          <div style="text-align:center;color:var(--gray-400);">
+            <i class="fi fi-br-play" style="font-size:3rem;color:var(--red);"></i>
+            <p style="margin-top:8px;font-size:13px;">Zayas and Ennis put on a legendary third round of pure action</p>
+          </div>
+        </div>
+        <div class="moment-body">
+          <p>Round 3 between Jaron "Boots" Ennis and Xander Zayas was nothing short of spectacular. Back-and-forth action that had the Barclays Center on its feet. Watch the full replay on DAZN.</p>
+        </div>
+        <div class="moment-actions">
+          <span><i class="fi fi-br-heart"></i> 2.4K</span>
+          <span><i class="fi fi-br-comment"></i> 186</span>
+          <span><i class="fi fi-br-share"></i> Share</span>
+        </div>
+      </div>
+
+      <div class="moment-card">
+        <div class="moment-header">
+          <img src="./images/Hero_section.jpg" alt="BoxArena" class="moment-avatar">
+          <div>
+            <span class="moment-author">BoxArena</span>
+            <span class="moment-time">5 hours ago</span>
+          </div>
+        </div>
+        <div class="moment-media" style="background:#16213e;display:flex;align-items:center;justify-content:center;height:300px;">
+          <div style="text-align:center;color:var(--gray-400);">
+            <i class="fi fi-br-play" style="font-size:3rem;color:var(--red);"></i>
+            <p style="margin-top:8px;font-size:13px;">Revenge! Watch Rayo knock out De Los Santos at Zuffa Boxing 08</p>
+          </div>
+        </div>
+        <div class="moment-body">
+          <p>Jose Valenzuela avenged his previous loss with a devastating second-round knockout of Edwin De Los Santos. The left hook heard around the lightweight division.</p>
+        </div>
+        <div class="moment-actions">
+          <span><i class="fi fi-br-heart"></i> 3.1K</span>
+          <span><i class="fi fi-br-comment"></i> 243</span>
+          <span><i class="fi fi-br-share"></i> Share</span>
+        </div>
+      </div>
+
+      <div class="moment-card">
+        <div class="moment-header">
+          <img src="./images/bright.jpg" alt="BoxArena" class="moment-avatar">
+          <div>
+            <span class="moment-author">BoxArena</span>
+            <span class="moment-time">1 day ago</span>
+          </div>
+        </div>
+        <div class="moment-media" style="background:#0f3460;display:flex;align-items:center;justify-content:center;height:300px;">
+          <div style="text-align:center;color:var(--gray-400);">
+            <i class="fi fi-br-play" style="font-size:3rem;color:var(--red);"></i>
+            <p style="margin-top:8px;font-size:13px;">Errol Spence trains hard before his July 26 bout vs. Tim Tszyu</p>
+          </div>
+        </div>
+        <div class="moment-body">
+          <p>Errol Spence Jr putting in the work at his Dallas training camp ahead of the welterweight showdown with Tim Tszyu. "I'm coming for everything," Spence said.</p>
+        </div>
+        <div class="moment-actions">
+          <span><i class="fi fi-br-heart"></i> 1.8K</span>
+          <span><i class="fi fi-br-comment"></i> 97</span>
+          <span><i class="fi fi-br-share"></i> Share</span>
+        </div>
+      </div>
+
+      <div class="moment-card">
+        <div class="moment-header">
+          <img src="./images/Boxing.jpg" alt="BoxArena" class="moment-avatar">
+          <div>
+            <span class="moment-author">BoxArena</span>
+            <span class="moment-time">2 days ago</span>
+          </div>
+        </div>
+        <div class="moment-media" style="background:#1a1a2e;display:flex;align-items:center;justify-content:center;height:300px;">
+          <div style="text-align:center;color:var(--gray-400);">
+            <i class="fi fi-br-play" style="font-size:3rem;color:var(--red);"></i>
+            <p style="margin-top:8px;font-size:13px;">This fan's angle of Bam's devastating KO vs. Vargas</p>
+          </div>
+        </div>
+        <div class="moment-body">
+          <p>Fan footage captures the brutal body shot that ended the Jesse Rodriguez vs. Juan Francisco Estrada fight. Bam Rodriguez continues his reign as the king of the super flyweights.</p>
+        </div>
+        <div class="moment-actions">
+          <span><i class="fi fi-br-heart"></i> 5.6K</span>
+          <span><i class="fi fi-br-comment"></i> 412</span>
+          <span><i class="fi fi-br-share"></i> Share</span>
+        </div>
+      </div>
+
+      <div class="moment-card">
+        <div class="moment-header">
+          <img src="./images/Pitius.jpg" alt="BoxArena" class="moment-avatar">
+          <div>
+            <span class="moment-author">BoxArena</span>
+            <span class="moment-time">3 days ago</span>
+          </div>
+        </div>
+        <div class="moment-media" style="background:#16213e;display:flex;align-items:center;justify-content:center;height:300px;">
+          <div style="text-align:center;color:var(--gray-400);">
+            <i class="fi fi-br-play" style="font-size:3rem;color:var(--red);"></i>
+            <p style="margin-top:8px;font-size:13px;">Eddy Reynoso showed what it's like to hold pads for Canelo</p>
+          </div>
+        </div>
+        <div class="moment-body">
+          <p>Behind the scenes at the Canelo Alvarez training camp. Trainer Eddy Reynoso puts Canelo through pad work and the speed is simply frightening. Mbilli camp take note.</p>
+        </div>
+        <div class="moment-actions">
+          <span><i class="fi fi-br-heart"></i> 4.2K</span>
+          <span><i class="fi fi-br-comment"></i> 301</span>
+          <span><i class="fi fi-br-share"></i> Share</span>
+        </div>
+      </div>
+
+      <div class="moment-card">
+        <div class="moment-header">
+          <img src="./images/ryan.jpg" alt="BoxArena" class="moment-avatar">
+          <div>
+            <span class="moment-author">BoxArena</span>
+            <span class="moment-time">4 days ago</span>
+          </div>
+        </div>
+        <div class="moment-media" style="background:#0f3460;display:flex;align-items:center;justify-content:center;height:300px;">
+          <div style="text-align:center;color:var(--gray-400);">
+            <i class="fi fi-br-play" style="font-size:3rem;color:var(--red);"></i>
+            <p style="margin-top:8px;font-size:13px;">Fury teases a massive announcement on his surprise U.S. return</p>
+          </div>
+        </div>
+        <div class="moment-body">
+          <p>Tyson Fury appeared on US media teasing a "massive announcement" about his next fight. The Gypsy King has been linked with a summer showdown in Las Vegas.</p>
+        </div>
+        <div class="moment-actions">
+          <span><i class="fi fi-br-heart"></i> 6.8K</span>
+          <span><i class="fi fi-br-comment"></i> 523</span>
+          <span><i class="fi fi-br-share"></i> Share</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" style="margin-top:0;">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+        <p>Africa's premier boxing platform. Connecting fighters, promoters, sponsors, and fans across 54 nations.</p>
+        <div class="footer-social">
+          <i class="fi fi-brands-instagram"></i><i class="fi fi-brands-twitter"></i><i class="fi fi-brands-facebook"></i><i class="fi fi-brands-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="fighters.html">Fighters</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="watch.html">Watch Fights</a></li>
+          <li><a href="moments.html">Moments</a></li>
+          <li><a href="live.html">Live</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@ProBoxTV" target="_blank">ProBox TV</a></li>
+          <li><a href="https://www.youtube.com/@DAZNBoxing" target="_blank">DAZN Boxing</a></li>
+          <li><a href="#">WBA Africa</a></li>
+          <li><a href="#">NBF Nigeria</a></li>
+          <li><a href="#">Boxing SA</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@boxarena.africa">info@boxarena.africa</a></p>
+        <p>Lagos &middot; Johannesburg &middot; Accra</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BoxArena. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live &ndash; BoxArena</title>
+<meta name="description" content="BoxArena live - watch live boxing streams, upcoming live events, and real-time fight coverage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="modal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="fighters.html" class="nav-link">Fighters</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="news.html" class="nav-link">News</a></li>
+      <li><a href="rankings.html" class="nav-link">Rankings</a></li>
+      <li><a href="watch.html" class="nav-link">Watch</a></li>
+      <li><a href="moments.html" class="nav-link">Moments</a></li>
+      <li><a href="live.html" class="nav-link live-link active">Live</a></li>
+      <li class="nav-icons">
+        <i class="fi fi-br-search" id="search-btn"></i>
+        <a href="#" class="btn-nav-signup" id="signup-btn">Sign Up</a>
+        <a href="#" class="btn-nav-login" id="login-btn">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="live-page">
+  <div class="live-container">
+    <div class="live-header">
+      <span class="live-badge"><i class="fi fi-br-circle" style="font-size:8px;vertical-align:middle;margin-right:6px;"></i> LIVE NOW</span>
+      <h1>Live Fights</h1>
+      <p>Watch live boxing streams and upcoming events. Check back for real-time coverage of fight nights.</p>
+    </div>
+    <div class="live-streams">
+      <div class="live-stream-card">
+        <div class="youtube-embed">
+          <iframe src="https://www.youtube.com/embed/live_stream?channel=UCT7Mm-aRWBZ1Zd2bIXIEsyg" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="live-stream-info">
+          <h3>ProBox TV</h3>
+          <p>Live boxing events, weigh-ins, and press conferences from ProBox TV.</p>
+          <span class="live-tag">Waiting for live stream</span>
+        </div>
+      </div>
+      <div class="live-stream-card">
+        <div class="youtube-embed">
+          <iframe src="https://www.youtube.com/embed/live_stream?channel=UCurvRE5fGcdUgCYWgh-BDsg" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="live-stream-info">
+          <h3>DAZN Boxing</h3>
+          <p>DAZN's live boxing coverage including weigh-ins, fight night streams, and post-fight analysis.</p>
+          <span class="live-tag">Waiting for live stream</span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:48px;padding:24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);">
+      <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:12px;">Upcoming Live Events</h3>
+      <div style="display:grid;gap:16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+          <div><strong>Ajagba vs Bakole 2</strong><br><span style="font-size:13px;color:var(--gray-400);">Wembley Stadium, London</span></div>
+          <span style="color:var(--red);font-weight:600;font-size:13px;">Aug 29</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+          <div><strong>Lerena vs Okolie</strong><br><span style="font-size:13px;color:var(--gray-400);">Wembley, London</span></div>
+          <span style="color:var(--red);font-weight:600;font-size:13px;">Jul 25</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;">
+          <div><strong>Teofimo Lopez vs Rolly Romero</strong><br><span style="font-size:13px;color:var(--gray-400);">T-Mobile Arena, Las Vegas</span></div>
+          <span style="color:var(--red);font-weight:600;font-size:13px;">Aug 22</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" style="margin-top:0;">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+        <p>Africa's premier boxing platform. Connecting fighters, promoters, sponsors, and fans across 54 nations.</p>
+        <div class="footer-social">
+          <i class="fi fi-brands-instagram"></i><i class="fi fi-brands-twitter"></i><i class="fi fi-brands-facebook"></i><i class="fi fi-brands-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="fighters.html">Fighters</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="watch.html">Watch Fights</a></li>
+          <li><a href="moments.html">Moments</a></li>
+          <li><a href="live.html">Live</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@ProBoxTV" target="_blank">ProBox TV</a></li>
+          <li><a href="https://www.youtube.com/@DAZNBoxing" target="_blank">DAZN Boxing</a></li>
+          <li><a href="#">WBA Africa</a></li>
+          <li><a href="#">NBF Nigeria</a></li>
+          <li><a href="#">Boxing SA</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@boxarena.africa">info@boxarena.africa</a></p>
+        <p>Lagos &middot; Johannesburg &middot; Accra</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BoxArena. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

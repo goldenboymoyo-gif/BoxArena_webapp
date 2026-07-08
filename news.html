@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News &ndash; BoxArena</title>
+<meta name="description" content="BoxArena boxing news - latest breaking stories, fight announcements, and exclusive reports from the boxing world.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="modal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="fighters.html" class="nav-link">Fighters</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="news.html" class="nav-link active">News</a></li>
+      <li><a href="rankings.html" class="nav-link">Rankings</a></li>
+      <li><a href="watch.html" class="nav-link">Watch</a></li>
+      <li><a href="moments.html" class="nav-link">Moments</a></li>
+      <li><a href="live.html" class="nav-link live-link">Live</a></li>
+      <li class="nav-icons">
+        <i class="fi fi-br-search" id="search-btn"></i>
+        <a href="#" class="btn-nav-signup" id="signup-btn">Sign Up</a>
+        <a href="#" class="btn-nav-login" id="login-btn">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="nav-page-indicator">News</div>
+
+<section class="section news-page" id="news">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">BoxArena Reports</span>
+      <h2>Boxing News</h2>
+      <p class="section-sub">Breaking stories, fight announcements, exclusive interviews, and analysis from the BoxArena news team.</p>
+    </div>
+  </div>
+  <div class="news-grid">
+    <article class="news-card" data-news="usyk-relinquishes">
+      <div class="news-img">
+        <img src="./images/Hero_section.jpg" alt="Oleksandr Usyk">
+        <span class="news-cat">Breaking</span>
+      </div>
+      <div class="news-body">
+        <h3>Usyk Relinquishes Heavyweight Titles, Plans Farewell Bout</h3>
+        <div class="news-meta">
+          <time>Jun 12, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+    <article class="news-card" data-news="ajagba-bakole-rematch">
+      <div class="news-img">
+        <img src="./images/Hero_section.jpg" alt="Ajagba vs Bakole">
+        <span class="news-cat">Fight Announcement</span>
+      </div>
+      <div class="news-body">
+        <h3>Ajagba vs Bakole 2 Confirmed for August 29 at Wembley</h3>
+        <div class="news-meta">
+          <time>Jul 1, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+    <article class="news-card" data-news="joshua-fury">
+      <div class="news-img">
+        <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Anthony Joshua">
+        <span class="news-cat">Heavyweight</span>
+      </div>
+      <div class="news-body">
+        <h3>Joshua vs Fury Venue Talks — Wembley on Table With One Condition</h3>
+        <div class="news-meta">
+          <time>Jun 30, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+    <article class="news-card" data-news="ennis-zayas">
+      <div class="news-img">
+        <img src="./images/bright.jpg" alt="Jaron Ennis">
+        <span class="news-cat">Fight Recap</span>
+      </div>
+      <div class="news-body">
+        <h3>Ennis Stops Zayas in Seven, Calls Out Vergil Ortiz</h3>
+        <div class="news-meta">
+          <time>Jun 25, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+    <article class="news-card" data-news="canelo-postponed">
+      <div class="news-img">
+        <img src="./images/Boxing.jpg" alt="Canelo Alvarez">
+        <span class="news-cat">Championship</span>
+      </div>
+      <div class="news-body">
+        <h3>Canelo vs Mbilli Postponed to October</h3>
+        <div class="news-meta">
+          <time>Jun 28, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+    <article class="news-card" data-news="kabayel-elevated">
+      <div class="news-img">
+        <img src="./images/Hero_section.jpg" alt="Agit Kabayel">
+        <span class="news-cat">Title News</span>
+      </div>
+      <div class="news-body">
+        <h3>Kabayel Elevated to WBC Champion After Usyk Vacates</h3>
+        <div class="news-meta">
+          <time>Jun 22, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+    <article class="news-card" data-news="teofimo-romero">
+      <div class="news-img">
+        <img src="./images/ryan.jpg" alt="Teofimo vs Romero">
+        <span class="news-cat">Fight Announcement</span>
+      </div>
+      <div class="news-body">
+        <h3>Lopez vs Romero Set for August 22 at T-Mobile Arena</h3>
+        <div class="news-meta">
+          <time>Jun 20, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+    <article class="news-card" data-news="joshua-prenga">
+      <div class="news-img">
+        <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Joshua vs Prenga">
+        <span class="news-cat">Fight Week</span>
+      </div>
+      <div class="news-body">
+        <h3>Joshua vs Prenga — Fight Week Weigh-In and Predictions</h3>
+        <div class="news-meta">
+          <time>Jun 18, 2026</time>
+          <span class="news-read">Read</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-box">Box</span><span class="logo-arena">Arena</span>
+        <p>Africa's premier boxing platform. Connecting fighters, promoters, sponsors, and fans across 54 nations.</p>
+        <div class="footer-social">
+          <i class="fi fi-brands-instagram"></i><i class="fi fi-brands-twitter"></i><i class="fi fi-brands-facebook"></i><i class="fi fi-brands-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="fighters.html">Fighters</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="watch.html">Watch Fights</a></li>
+          <li><a href="moments.html">Moments</a></li>
+          <li><a href="live.html">Live</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@ProBoxTV" target="_blank">ProBox TV</a></li>
+          <li><a href="https://www.youtube.com/@DAZNBoxing" target="_blank">DAZN Boxing</a></li>
+          <li><a href="#">WBA Africa</a></li>
+          <li><a href="#">NBF Nigeria</a></li>
+          <li><a href="#">Boxing SA</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@boxarena.africa">info@boxarena.africa</a></p>
+        <p>Lagos &middot; Johannesburg &middot; Accra</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BoxArena. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
