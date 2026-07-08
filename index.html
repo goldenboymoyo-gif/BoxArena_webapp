@@ -3,381 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoxArena</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>BoxArena - Africa's Home of Boxing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<!--this is my hero section-->
-    <section class="hero">
-        <div class="overlay">
-        <nav>
-        <div class="logo">
 
-            <div class="imglogo">
-                
-        <img src="./images/logo.png" alt="logo" class="logo">
-            </div>
-        
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="./images/logo.png" alt="BoxArena">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">HOME</a></li>
+                <li><a href="#featured" class="nav-link">FIGHTERS</a></li>
+                <li><a href="#events" class="nav-link">EVENTS</a></li>
+                <li><a href="#news" class="nav-link">NEWS</a></li>
+                <li><a href="#rankings" class="nav-link">RANKINGS</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li class="nav-icons">
+                    <i class="fi fi-br-search"></i>
+                    <i class="fi fi-rs-bell-notification-social-media"></i>
+                    <i class="fi fi-rr-user"></i>
+                </li>
+            </ul>
         </div>
-    <div>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#featured">FIGHTERS</a></li>
-            <li><a href="#events">EVENTS</a></li>
-            <li><a href="#news">NEWS</a></li>
-            <li><a href="#rankings">RANKINGS</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <div class="icons">
-            <i class="fi fi-br-search"></i>
-            <i class="fi fi-rs-bell-notification-social-media"></i>
-            <i class="fi fi-rr-user"></i>
-            </div>
-        </ul>
-    </div>
     </nav>
-        <div class="bg-vid">
-            <div class="OVERLAY">
-    <img src="./images/Sports Illustrated (@SInow) on X.jpg" alt="background video" class="bg-vid">
-    </div>
-        </div >
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg"></div>
         <div class="hero-content">
-    <div class="text">
-        <h1>AFRICA'S HOME<br> OF  <span>BOXING</span></h1>
-        <p>The ultimate platform for boxers,<br>
-        fans and promoters across Africa.</p>
-        <button class="btn">Join Now</button>
-        <button class="btn2">Watch Fights</button>
-        </div>
-
-        <div class="stats">
-            <div class="stat">
-                <h2>Fighters</h2>
-                <span>50k</span>
+            <div class="hero-text">
+                <h1>AFRICA'S HOME OF <span>BOXING</span></h1>
+                <p>The ultimate platform for boxers, fans and promoters across Africa.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Join Now</a>
+                    <a href="#" class="btn btn-outline">Watch Fights</a>
+                </div>
             </div>
-            <div class="stat">
-                <h2>Events</h2>
-                <span>10k</span>
-            </div>
-            <div class="stat">
-                <h2>Countries</h2>
-                <span>10k</span>
-            </div>
-        </div>
-        </div>
-        </div>
-</section>
-
-<!--this is my fighters section-->
-<section class="fighters" id="featured">
-
-    <div class="top-bar">
-        <h2>FEATURED FIGHTERS</h2>
-        <p href="#">VIEW ALL</p>
-    </div>
-
-    <div class="cards">
-
-        <div class="card">
-            <img src="images/bright.jpg" alt="image">
-            <div class="info">
-                <h3>Bright Moyo</h3>
-                <p>Zimbabwe, ZW </p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">50K</span>
+                    <span class="stat-label">Fighters</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">10K</span>
+                    <span class="stat-label">Events</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">54</span>
+                    <span class="stat-label">Countries</span>
+                </div>
             </div>
         </div>
-
-        <div class="card">
-            <img src="images/Boxing.jpg" alt="image">
-            <div class="info">
-                <h3>Tickey Zulu</h3>
-                <p>South Africa, SA</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="images/Hero_section.jpg"alt="image">
-            <div class="info">
-                <h3>Methembe Zungu</h3>
-                <p>Zambia, ZM</p>
-            </div>
-        </div>
-                <div class="card">
-            <img src="images/Hero_section.jpg"alt="image">
-            <div class="info">
-                <h3>John Doe</h3>
-                <p>Nigeria, NG</p>
-            </div>
-        </div>
-        </div>
-</section>
-
-<!--this is my upcoming fights section-->
-    <section class="up-coming-fights" id="events" >
-        
-    <div class="top-bar">
-        <h2>UPCOMING FIGHTS</h2>
-        <p href="#">VIEW ALL</p>
-    </div>
-
-    <div class="fights">
-
-    <div class="fight">
-
-        <div class="boxer">
-            <img src="images/bright.jpg" alt="">
-            <div class="info">
-                <h3>Bright Moyo</h3>
-                <p>Zimbabwe</p>
-            </div>
-        </div>
-
-        <div class="vs">VS</div>
-
-
-        <div class="boxer">
-            <img src="images/Hero_section.jpg" alt="">
-            <div class="info">
-                <h3>Methembe Zungu</h3>
-                <p>Zambia</p>
-            </div>
-        </div>
-
-        <div class="date">
-            <h2>22 MAY 2026</h2>
-            <p>South Africa</p>
-        </div>
-    </div>
-</div>
-    </section>
-    
-    <section class="up-coming-fights" id="events" >
-
-    <div class="fights">
-
-    <div class="fight">
-
-        <div class="boxer">
-            <img src="images/Boxing.jpg" alt="">
-            <div class="info">
-                <h3>Tickey Mudenda</h3>
-                <p>Zimbabwe</p>
-            </div>
-        </div>
-
-        <div class="vs">VS</div>
-
-
-        <div class="boxer">
-            <img src="images/ryan.jpg" alt="">
-            <div class="info">
-                <h3>Martin Zulu</h3>
-                <p>South Africa</p>
-            </div>
-        </div>
-
-        <div class="date">
-            <h2>01 July 2026</h2>
-            <p>Nigeria</p>
-        </div>
-    </div>
-</div>
     </section>
 
-    <section class="up-coming-fights" id="events" >
-
-    <div class="fights">
-
-    <div class="fight">
-
-        <div class="boxer">
-            <img src="images/Pitius.jpg" alt="">
-            <div class="info">
-                <h3>Pitius Mopeng</h3>
-                <p>South Africa</p>
+    <section class="section featured-fighters" id="featured">
+        <div class="section-header">
+            <h2>FEATURED FIGHTERS</h2>
+            <a href="#" class="view-all">VIEW ALL</a>
+        </div>
+        <div class="fighters-grid">
+            <div class="fighter-card">
+                <div class="fighter-image">
+                    <img src="./images/bright.jpg" alt="Bright Moyo">
+                </div>
+                <div class="fighter-info">
+                    <h3>Bright Moyo</h3>
+                    <p>Zimbabwe, ZW</p>
+                </div>
+            </div>
+            <div class="fighter-card">
+                <div class="fighter-image">
+                    <img src="./images/Boxing.jpg" alt="Tickey Zulu">
+                </div>
+                <div class="fighter-info">
+                    <h3>Tickey Zulu</h3>
+                    <p>South Africa, SA</p>
+                </div>
+            </div>
+            <div class="fighter-card">
+                <div class="fighter-image">
+                    <img src="./images/Hero_section.jpg" alt="Methembe Zungu">
+                </div>
+                <div class="fighter-info">
+                    <h3>Methembe Zungu</h3>
+                    <p>Zambia, ZM</p>
+                </div>
+            </div>
+            <div class="fighter-card">
+                <div class="fighter-image">
+                    <img src="./images/Hero_section.jpg" alt="John Doe">
+                </div>
+                <div class="fighter-info">
+                    <h3>John Doe</h3>
+                    <p>Nigeria, NG</p>
+                </div>
             </div>
         </div>
-
-        <div class="vs">VS</div>
-
-
-        <div class="boxer">
-            <img src="images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="">
-            <div class="info">
-                <h3>Aliar Zungu</h3>
-                <p>Malawi</p>
-            </div>
-        </div>
-
-        <div class="date">
-            <h2>12 December 2026</h2>
-            <p>Anggola</p>
-        </div>
-    </div>
-</div>
     </section>
 
-    <!--this is my news section-->
-    <section class="latest-news" id="news">
-        
-    <div class="top-bar">
-        <h2>LATEST NEWS</h2>
-        <p href="#">VIEW ALL</p>
-    </div>
+    <section class="section upcoming-events" id="events">
+        <div class="section-header">
+            <h2>UPCOMING FIGHTS</h2>
+            <a href="#" class="view-all">VIEW ALL</a>
+        </div>
+        <div class="events-list">
+            <div class="event-card">
+                <div class="event-fighters">
+                    <div class="event-fighter">
+                        <img src="./images/bright.jpg" alt="Bright Moyo">
+                        <div>
+                            <h4>Bright Moyo</h4>
+                            <p>Zimbabwe</p>
+                        </div>
+                    </div>
+                    <div class="event-vs">VS</div>
+                    <div class="event-fighter">
+                        <img src="./images/Hero_section.jpg" alt="Methembe Zungu">
+                        <div>
+                            <h4>Methembe Zungu</h4>
+                            <p>Zambia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <span class="event-date">22 MAY 2026</span>
+                    <span class="event-location">South Africa</span>
+                </div>
+            </div>
 
-    <div class="news">
+            <div class="event-card">
+                <div class="event-fighters">
+                    <div class="event-fighter">
+                        <img src="./images/Boxing.jpg" alt="Tickey Mudenda">
+                        <div>
+                            <h4>Tickey Mudenda</h4>
+                            <p>Zimbabwe</p>
+                        </div>
+                    </div>
+                    <div class="event-vs">VS</div>
+                    <div class="event-fighter">
+                        <img src="./images/ryan.jpg" alt="Martin Zulu">
+                        <div>
+                            <h4>Martin Zulu</h4>
+                            <p>South Africa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <span class="event-date">01 JUL 2026</span>
+                    <span class="event-location">Nigeria</span>
+                </div>
+            </div>
 
-        <div class="boxer">
-            <img src="images/Hero_section.jpg" alt="">
-            <div class="info">
-                <h3>All eyes on Bright<br>ahead of...</h3>
-                <p>22 May 2026</p>
+            <div class="event-card">
+                <div class="event-fighters">
+                    <div class="event-fighter">
+                        <img src="./images/Pitius.jpg" alt="Pitius Mopeng">
+                        <div>
+                            <h4>Pitius Mopeng</h4>
+                            <p>South Africa</p>
+                        </div>
+                    </div>
+                    <div class="event-vs">VS</div>
+                    <div class="event-fighter">
+                        <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Aliar Zungu">
+                        <div>
+                            <h4>Aliar Zungu</h4>
+                            <p>Malawi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <span class="event-date">12 DEC 2026</span>
+                    <span class="event-location">Angola</span>
+                </div>
             </div>
         </div>
-
-                <div class="boxer">
-            <img src="images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="">
-            <div class="info">
-                <h3>This Friday Martin<br>is facing...</h3>
-                <p>22 May 2026</p>
-            </div>
-        </div>
-
-        
-                <div class="boxer">
-            <img src="images/ryan.jpg" alt="">
-            <div class="info">
-                <h3>A big win from<br>Donnavan in Los...</h3>
-                <p>22 May 2026</p>
-            </div>
-        </div>
-
-
-                <div class="boxer">
-            <img src="images/Pitius.jpg" alt="">
-            <div class="info">
-                <h3>Pitius has been<br> in a big...</h3>
-                <p>22 May 2026</p>
-            </div>
-        </div>
-    </div>
-    </section>
-    
-<!--this is my rankings section-->
-    <section class="rankings" id="rankings">
-
-        <div class="top-bar">
-        <h2>RANKINGS</h2>
-        <p class="africa">LIGHTWEIGHT</p>
-        <P href="#">AFRICA</P>
-    </div>
-    <div class="status">
-    <h6>#</h6>
-    <h6>FIGHTER</h6>
-    <h6>COUNTRY</h6>
-    <h6>RECORD</h6>
-    <h6>POINTS</h6>
-</div>
-        <div class="details">
-    <span>1</span>
-
-    <div class="boxer">
-        <img src="images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="">
-        <h2>Bright</h2>
-    </div>
-    <h2 class="country">Zimbabwe</h2>
-    <h2 class="rec">10-0-1</h2>
-    <h2 class="points">1200</h2>
-</div>
-
-        <div class="details">
-    <span>2</span>
-
-    <div class="boxer">
-        <img src="images/Pitius.jpg" alt="">
-        <h2>Tickey</h2>
-    </div>
-
-    <h2 class="country">South Africa</h2>
-    <h2 class="rec">8-1-0</h2>
-    <h2 class="points">1150</h2>
-</div>
-<div class="details">
-    <span>3</span>
-
-    <div class="boxer">
-        <img src="images/bright.jpg" alt="">
-        <h2>Cafu</h2>
-    </div>
-    <h2 class="country">Angola</h2>
-    <h2 class="rec">9-5-1</h2>
-    <h2 class="points">1100</h2>
-</div>
-
-        <div class="details">
-    <span>4</span>
-
-    <div class="boxer">
-        <img src="images/ryan.jpg" alt="">
-        <h2>Donavan</h2>
-    </div>
-
-    <h2 class="country">South Africa</h2>
-    <h2 class="rec">10-3-2</h2>
-    <h2 class="points">1000</h2>
-</div>
     </section>
 
-<section class="about" id="about">
-    <div class="about-container">
-
-        <div class="about-header">
-            <h1>About BoxArena</h1>
-            <p>
-                BoxArena is a modern boxing platform built to connect fighters,
-                promoters, and fans through seamless access to boxing events,
-                athlete profiles, rankings, and fight updates.
-            </p>
+    <section class="section latest-news" id="news">
+        <div class="section-header">
+            <h2>LATEST NEWS</h2>
+            <a href="#" class="view-all">VIEW ALL</a>
         </div>
-
-        <div class="about-content">
-
-            <div class="about-card">
-                <h2>Our Mission</h2>
-                <p>
-                    Our mission is to empower upcoming fighters by giving them
-                    visibility while helping fans discover exciting boxing talent.
-                    We aim to make boxing information accessible, transparent,
-                    and engaging worldwide.
-                </p>
-            </div>
-
-            <div class="about-card">
-                <h2>What We Do</h2>
-                <p>
-                    We provide real-time fight schedules, fighter profiles,
-                    rankings, event promotions, and boxing news—all in one
-                    powerful platform designed for the boxing community.
-                </p>
-            </div>
-
-            <div class="about-card">
-                <h2>Why Choose Us</h2>
-                <p>
-                    BoxArena delivers a modern user experience, accurate fight
-                    updates, and a trusted platform where boxing enthusiasts
-                    can stay connected to the sport they love.
-                </p>
-            </div>
-
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="./images/Hero_section.jpg" alt="Bright Moyo news">
+                <div class="news-content">
+                    <h3>All eyes on Bright ahead of...</h3>
+                    <time datetime="2026-05-22">22 May 2026</time>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Martin Zulu news">
+                <div class="news-content">
+                    <h3>This Friday Martin is facing...</h3>
+                    <time datetime="2026-05-22">22 May 2026</time>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="./images/ryan.jpg" alt="Donnavan news">
+                <div class="news-content">
+                    <h3>A big win from Donnavan in Los...</h3>
+                    <time datetime="2026-05-22">22 May 2026</time>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="./images/Pitius.jpg" alt="Pitius news">
+                <div class="news-content">
+                    <h3>Pitius has been in a big...</h3>
+                    <time datetime="2026-05-22">22 May 2026</time>
+                </div>
+            </article>
         </div>
+    </section>
 
-    </div>
-</section>
-<footer>
-    <div class="copy">
-        <p class="copyright">© All Rights Reserved | BoxArena</p>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/license.min.js"></script>
+    <section class="section rankings" id="rankings">
+        <div class="section-header">
+            <h2>RANKINGS</h2>
+            <div class="rankings-filters">
+                <span class="filter active">LIGHTWEIGHT</span>
+                <a href="#" class="filter">AFRICA</a>
+            </div>
+        </div>
+        <div class="rankings-table">
+            <div class="rankings-header">
+                <span>#</span>
+                <span>FIGHTER</span>
+                <span>COUNTRY</span>
+                <span>RECORD</span>
+                <span>POINTS</span>
+            </div>
+            <div class="rankings-row">
+                <span class="rank">1</span>
+                <div class="rank-fighter">
+                    <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Bright">
+                    <span>Bright</span>
+                </div>
+                <span>Zimbabwe</span>
+                <span>10-0-1</span>
+                <span class="points">1200</span>
+            </div>
+            <div class="rankings-row">
+                <span class="rank">2</span>
+                <div class="rank-fighter">
+                    <img src="./images/Pitius.jpg" alt="Tickey">
+                    <span>Tickey</span>
+                </div>
+                <span>South Africa</span>
+                <span>8-1-0</span>
+                <span class="points">1150</span>
+            </div>
+            <div class="rankings-row">
+                <span class="rank">3</span>
+                <div class="rank-fighter">
+                    <img src="./images/bright.jpg" alt="Cafu">
+                    <span>Cafu</span>
+                </div>
+                <span>Angola</span>
+                <span>9-5-1</span>
+                <span class="points">1100</span>
+            </div>
+            <div class="rankings-row">
+                <span class="rank">4</span>
+                <div class="rank-fighter">
+                    <img src="./images/ryan.jpg" alt="Donavan">
+                    <span>Donavan</span>
+                </div>
+                <span>South Africa</span>
+                <span>10-3-2</span>
+                <span class="points">1000</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>About BoxArena</h2>
+                <p>BoxArena is a modern boxing platform built to connect fighters, promoters, and fans through seamless access to boxing events, athlete profiles, rankings, and fight updates.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to empower upcoming fighters by giving them visibility while helping fans discover exciting boxing talent. We aim to make boxing information accessible, transparent, and engaging worldwide.</p>
+                </div>
+                <div class="about-card">
+                    <h3>What We Do</h3>
+                    <p>We provide real-time fight schedules, fighter profiles, rankings, event promotions, and boxing news — all in one powerful platform designed for the boxing community.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Why Choose Us</h3>
+                    <p>BoxArena delivers a modern user experience, accurate fight updates, and a trusted platform where boxing enthusiasts can stay connected to the sport they love.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 All Rights Reserved | BoxArena</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
