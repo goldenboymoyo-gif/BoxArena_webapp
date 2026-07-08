@@ -18,15 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    let lastScroll = 0;
     window.addEventListener('scroll', () => {
-        const current = window.scrollY;
-        if (current > 50) {
+        if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-        lastScroll = current;
 
         let currentSection = '';
         document.querySelectorAll('section[id]').forEach(section => {
@@ -40,6 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (link.getAttribute('href') === `#${currentSection}`) {
                 link.classList.add('active');
             }
+        });
+    });
+
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
         });
     });
 });

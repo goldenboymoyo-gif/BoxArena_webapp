@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoxArena - Africa's Home of Boxing</title>
+    <title>BoxArena | Africa's Premier Boxing Platform</title>
+    <meta name="description" content="BoxArena connects African fighters, promoters, sponsors and fans through professional boxing events, athlete profiles, rankings, and fight updates.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -24,7 +25,7 @@
             </button>
             <ul class="nav-menu">
                 <li><a href="#" class="nav-link active">HOME</a></li>
-                <li><a href="#featured" class="nav-link">FIGHTERS</a></li>
+                <li><a href="#fighters" class="nav-link">FIGHTERS</a></li>
                 <li><a href="#events" class="nav-link">EVENTS</a></li>
                 <li><a href="#news" class="nav-link">NEWS</a></li>
                 <li><a href="#rankings" class="nav-link">RANKINGS</a></li>
@@ -39,74 +40,120 @@
     </nav>
 
     <section class="hero" id="home">
-        <div class="hero-overlay"></div>
         <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1>AFRICA'S HOME OF <span>BOXING</span></h1>
-                <p>The ultimate platform for boxers, fans and promoters across Africa.</p>
+                <span class="hero-badge">Official WBA Africa Partner</span>
+                <h1>Africa's Home of <span>Boxing</span></h1>
+                <p>The premier platform connecting African fighters, promoters, sponsors, and fans worldwide.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Join Now</a>
-                    <a href="#" class="btn btn-outline">Watch Fights</a>
+                    <a href="#about" class="btn btn-primary">Partner With Us</a>
+                    <a href="#events" class="btn btn-outline">Upcoming Fights</a>
                 </div>
             </div>
             <div class="hero-stats">
                 <div class="stat-card">
-                    <span class="stat-number">50K</span>
-                    <span class="stat-label">Fighters</span>
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Registered Fighters</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">10K</span>
-                    <span class="stat-label">Events</span>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Annual Events</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-number">54</span>
-                    <span class="stat-label">Countries</span>
+                    <span class="stat-label">African Nations</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">2M+</span>
+                    <span class="stat-label">Global Audience</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section featured-fighters" id="featured">
+    <section class="partners-bar">
+        <div class="partners-container">
+            <span class="partners-label">Trusted By</span>
+            <div class="partners-logos">
+                <span class="partner-logo">WBA Africa</span>
+                <span class="partner-logo">NBF Nigeria</span>
+                <span class="partner-logo">Boxing SA</span>
+                <span class="partner-logo">ABU</span>
+                <span class="partner-logo">WBF</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section featured-fighters" id="fighters">
         <div class="section-header">
-            <h2>FEATURED FIGHTERS</h2>
-            <a href="#" class="view-all">VIEW ALL</a>
+            <h2>Featured African Fighters</h2>
+            <p class="section-subtitle">Africa's finest boxing talent making waves on the global stage</p>
         </div>
         <div class="fighters-grid">
             <div class="fighter-card">
                 <div class="fighter-image">
-                    <img src="./images/bright.jpg" alt="Bright Moyo">
+                    <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Efe Ajagba">
+                    <div class="fighter-badge">Heavyweight</div>
                 </div>
                 <div class="fighter-info">
-                    <h3>Bright Moyo</h3>
-                    <p>Zimbabwe, ZW</p>
+                    <div class="fighter-flag">Nigeria</div>
+                    <h3>Efe Ajagba</h3>
+                    <p class="fighter-record">21-1-1 (14 KOs)</p>
+                    <p class="fighter-title">WBA Africa Heavyweight Champion</p>
+                    <div class="fighter-stats">
+                        <span>6'6" | 85" Reach</span>
+                        <span>Age: 32</span>
+                    </div>
                 </div>
             </div>
             <div class="fighter-card">
                 <div class="fighter-image">
-                    <img src="./images/Boxing.jpg" alt="Tickey Zulu">
+                    <img src="./images/bright.jpg" alt="Kevin Lerena">
+                    <div class="fighter-badge">Bridgerweight</div>
                 </div>
                 <div class="fighter-info">
-                    <h3>Tickey Zulu</h3>
-                    <p>South Africa, SA</p>
+                    <div class="fighter-flag">South Africa</div>
+                    <h3>Kevin Lerena</h3>
+                    <p class="fighter-record">31-4 (15 KOs)</p>
+                    <p class="fighter-title">WBC Bridgerweight Champion</p>
+                    <div class="fighter-stats">
+                        <span>6'1" | 74" Reach</span>
+                        <span>Age: 34</span>
+                    </div>
                 </div>
             </div>
             <div class="fighter-card">
                 <div class="fighter-image">
-                    <img src="./images/Hero_section.jpg" alt="Methembe Zungu">
+                    <img src="./images/Hero_section.jpg" alt="Martin Bakole">
+                    <div class="fighter-badge">Heavyweight</div>
                 </div>
                 <div class="fighter-info">
-                    <h3>Methembe Zungu</h3>
-                    <p>Zambia, ZM</p>
+                    <div class="fighter-flag">DR Congo</div>
+                    <h3>Martin Bakole</h3>
+                    <p class="fighter-record">21-1-1 (15 KOs)</p>
+                    <p class="fighter-title">WBA Africa Heavyweight Champion</p>
+                    <div class="fighter-stats">
+                        <span>6'6" | 80" Reach</span>
+                        <span>Age: 33</span>
+                    </div>
                 </div>
             </div>
             <div class="fighter-card">
                 <div class="fighter-image">
-                    <img src="./images/Hero_section.jpg" alt="John Doe">
+                    <img src="./images/Boxing.jpg" alt="Isaac Dogboe">
+                    <div class="fighter-badge">Featherweight</div>
                 </div>
                 <div class="fighter-info">
-                    <h3>John Doe</h3>
-                    <p>Nigeria, NG</p>
+                    <div class="fighter-flag">Ghana</div>
+                    <h3>Isaac Dogboe</h3>
+                    <p class="fighter-record">26-4 (15 KOs)</p>
+                    <p class="fighter-title">Former WBO Champion</p>
+                    <div class="fighter-stats">
+                        <span>5'6" | 68" Reach</span>
+                        <span>Age: 31</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,206 +161,330 @@
 
     <section class="section upcoming-events" id="events">
         <div class="section-header">
-            <h2>UPCOMING FIGHTS</h2>
-            <a href="#" class="view-all">VIEW ALL</a>
+            <h2>Upcoming Events</h2>
+            <p class="section-subtitle">Major fights featuring African boxers on the global calendar</p>
         </div>
         <div class="events-list">
-            <div class="event-card">
+            <div class="event-card featured-event">
+                <div class="event-badge">Main Event</div>
                 <div class="event-fighters">
                     <div class="event-fighter">
-                        <img src="./images/bright.jpg" alt="Bright Moyo">
+                        <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Efe Ajagba">
                         <div>
-                            <h4>Bright Moyo</h4>
-                            <p>Zimbabwe</p>
+                            <h4>Efe Ajagba</h4>
+                            <p>Nigeria</p>
                         </div>
                     </div>
                     <div class="event-vs">VS</div>
                     <div class="event-fighter">
-                        <img src="./images/Hero_section.jpg" alt="Methembe Zungu">
+                        <img src="./images/Hero_section.jpg" alt="Martin Bakole">
                         <div>
-                            <h4>Methembe Zungu</h4>
-                            <p>Zambia</p>
+                            <h4>Martin Bakole</h4>
+                            <p>DR Congo</p>
                         </div>
                     </div>
                 </div>
                 <div class="event-details">
-                    <span class="event-date">22 MAY 2026</span>
-                    <span class="event-location">South Africa</span>
+                    <span class="event-date">AUG 29, 2026</span>
+                    <span class="event-location">London, UK</span>
+                    <span class="event-promoter">Queensberry Promotions</span>
                 </div>
             </div>
-
             <div class="event-card">
                 <div class="event-fighters">
                     <div class="event-fighter">
-                        <img src="./images/Boxing.jpg" alt="Tickey Mudenda">
+                        <img src="./images/bright.jpg" alt="Kevin Lerena">
                         <div>
-                            <h4>Tickey Mudenda</h4>
-                            <p>Zimbabwe</p>
-                        </div>
-                    </div>
-                    <div class="event-vs">VS</div>
-                    <div class="event-fighter">
-                        <img src="./images/ryan.jpg" alt="Martin Zulu">
-                        <div>
-                            <h4>Martin Zulu</h4>
-                            <p>South Africa</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="event-details">
-                    <span class="event-date">01 JUL 2026</span>
-                    <span class="event-location">Nigeria</span>
-                </div>
-            </div>
-
-            <div class="event-card">
-                <div class="event-fighters">
-                    <div class="event-fighter">
-                        <img src="./images/Pitius.jpg" alt="Pitius Mopeng">
-                        <div>
-                            <h4>Pitius Mopeng</h4>
+                            <h4>Kevin Lerena</h4>
                             <p>South Africa</p>
                         </div>
                     </div>
                     <div class="event-vs">VS</div>
                     <div class="event-fighter">
-                        <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Aliar Zungu">
+                        <img src="./images/ryan.jpg" alt="Lawrence Okolie">
                         <div>
-                            <h4>Aliar Zungu</h4>
-                            <p>Malawi</p>
+                            <h4>Lawrence Okolie</h4>
+                            <p>United Kingdom</p>
                         </div>
                     </div>
                 </div>
                 <div class="event-details">
-                    <span class="event-date">12 DEC 2026</span>
-                    <span class="event-location">Angola</span>
+                    <span class="event-date">JUL 25, 2026</span>
+                    <span class="event-location">Wembley, London</span>
+                    <span class="event-promoter">Matchroom Boxing</span>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-fighters">
+                    <div class="event-fighter">
+                        <img src="./images/Pitius.jpg" alt="Sivenathi Nontshinga">
+                        <div>
+                            <h4>Sivenathi Nontshinga</h4>
+                            <p>South Africa</p>
+                        </div>
+                    </div>
+                    <div class="event-vs">VS</div>
+                    <div class="event-fighter">
+                        <img src="./images/Hero_section.jpg" alt="TBA">
+                        <div>
+                            <h4>TBA</h4>
+                            <p>Title Defense</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <span class="event-date">SEP 12, 2026</span>
+                    <span class="event-location">East London, SA</span>
+                    <span class="event-promoter">Boxing SA</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section latest-news" id="news">
+    <section class="section news-section" id="news">
         <div class="section-header">
-            <h2>LATEST NEWS</h2>
-            <a href="#" class="view-all">VIEW ALL</a>
+            <h2>Latest Boxing News</h2>
+            <p class="section-subtitle">Stay updated with the latest from the African boxing scene</p>
         </div>
         <div class="news-grid">
             <article class="news-card">
-                <img src="./images/Hero_section.jpg" alt="Bright Moyo news">
+                <img src="./images/Hero_section.jpg" alt="Efe Ajagba vs Martin Bakole rematch">
                 <div class="news-content">
-                    <h3>All eyes on Bright ahead of...</h3>
-                    <time datetime="2026-05-22">22 May 2026</time>
+                    <span class="news-category">Fight Announcement</span>
+                    <h3>Ajagba vs Bakole Rematch Set for August in London</h3>
+                    <p>The all-African heavyweight clash will headline a Queensberry card at Wembley.</p>
+                    <div class="news-footer">
+                        <time datetime="2026-07-01">July 1, 2026</time>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
                 </div>
             </article>
             <article class="news-card">
-                <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Martin Zulu news">
+                <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Kevin Lerena title defense">
                 <div class="news-content">
-                    <h3>This Friday Martin is facing...</h3>
-                    <time datetime="2026-05-22">22 May 2026</time>
+                    <span class="news-category">Title Fight</span>
+                    <h3>Lerena to Defend WBC Bridgerweight Title Against Okolie</h3>
+                    <p>The South African champion moves up to heavyweight for a massive showdown at Wembley.</p>
+                    <div class="news-footer">
+                        <time datetime="2026-06-28">June 28, 2026</time>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
                 </div>
             </article>
             <article class="news-card">
-                <img src="./images/ryan.jpg" alt="Donnavan news">
+                <img src="./images/ryan.jpg" alt="Nontshinga IBF title defense">
                 <div class="news-content">
-                    <h3>A big win from Donnavan in Los...</h3>
-                    <time datetime="2026-05-22">22 May 2026</time>
+                    <span class="news-category">Championship</span>
+                    <h3>Nontshinga to Defend IBF Light Flyweight Title in September</h3>
+                    <p>South Africa's world champion returns to Eastern Cape for mandatory defense.</p>
+                    <div class="news-footer">
+                        <time datetime="2026-06-25">June 25, 2026</time>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
                 </div>
             </article>
             <article class="news-card">
-                <img src="./images/Pitius.jpg" alt="Pitius news">
+                <img src="./images/Boxing.jpg" alt="NBF calendar 2026">
                 <div class="news-content">
-                    <h3>Pitius has been in a big...</h3>
-                    <time datetime="2026-05-22">22 May 2026</time>
+                    <span class="news-category">Development</span>
+                    <h3>Nigeria Boxing Federation Unveils 2026 Development Calendar</h3>
+                    <p>NBF announces comprehensive programme to drive growth of Nigerian boxing globally.</p>
+                    <div class="news-footer">
+                        <time datetime="2026-06-20">June 20, 2026</time>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
                 </div>
             </article>
         </div>
     </section>
 
-    <section class="section rankings" id="rankings">
+    <section class="section rankings-section" id="rankings">
         <div class="section-header">
-            <h2>RANKINGS</h2>
-            <div class="rankings-filters">
-                <span class="filter active">LIGHTWEIGHT</span>
-                <a href="#" class="filter">AFRICA</a>
-            </div>
+            <h2>WBA Africa Rankings</h2>
+            <p class="section-subtitle">Official WBA Africa top 10 by weight division</p>
         </div>
-        <div class="rankings-table">
-            <div class="rankings-header">
-                <span>#</span>
-                <span>FIGHTER</span>
-                <span>COUNTRY</span>
-                <span>RECORD</span>
-                <span>POINTS</span>
-            </div>
-            <div class="rankings-row">
-                <span class="rank">1</span>
-                <div class="rank-fighter">
-                    <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Bright">
-                    <span>Bright</span>
-                </div>
-                <span>Zimbabwe</span>
-                <span>10-0-1</span>
-                <span class="points">1200</span>
-            </div>
-            <div class="rankings-row">
-                <span class="rank">2</span>
-                <div class="rank-fighter">
-                    <img src="./images/Pitius.jpg" alt="Tickey">
-                    <span>Tickey</span>
-                </div>
-                <span>South Africa</span>
-                <span>8-1-0</span>
-                <span class="points">1150</span>
-            </div>
-            <div class="rankings-row">
-                <span class="rank">3</span>
-                <div class="rank-fighter">
-                    <img src="./images/bright.jpg" alt="Cafu">
-                    <span>Cafu</span>
-                </div>
-                <span>Angola</span>
-                <span>9-5-1</span>
-                <span class="points">1100</span>
-            </div>
-            <div class="rankings-row">
-                <span class="rank">4</span>
-                <div class="rank-fighter">
-                    <img src="./images/ryan.jpg" alt="Donavan">
-                    <span>Donavan</span>
-                </div>
-                <span>South Africa</span>
-                <span>10-3-2</span>
-                <span class="points">1000</span>
-            </div>
+        <div class="rankings-tabs">
+            <button class="tab-btn active" data-division="heavyweight">Heavyweight</button>
+            <button class="tab-btn" data-division="cruiserweight">Cruiserweight</button>
+            <button class="tab-btn" data-division="lightweight">Lightweight</button>
+        </div>
+        <div class="rankings-table-wrapper">
+            <table class="rankings-table" id="rankings-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Fighter</th>
+                        <th>Country</th>
+                        <th>Record</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rank">C</td>
+                        <td class="rank-fighter">
+                            <img src="./images/Anthony Joshua's Heavyweight Training Tips.jpg" alt="Emanuel Odiase">
+                            <span>Emanuel Odiase</span>
+                        </td>
+                        <td>Germany</td>
+                        <td>15-0 (12 KOs)</td>
+                        <td><span class="status-badge champion">Champion</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">1</td>
+                        <td class="rank-fighter">
+                            <img src="./images/Hero_section.jpg" alt="Martin Bakole">
+                            <span>Martin Bakole</span>
+                        </td>
+                        <td>DR Congo</td>
+                        <td>21-1-1 (15 KOs)</td>
+                        <td><span class="status-badge contender">Contender</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">2</td>
+                        <td class="rank-fighter">
+                            <img src="./images/Boxing.jpg" alt="Chibuihe Ogbuagu">
+                            <span>Chibuihe Ogbuagu</span>
+                        </td>
+                        <td>Nigeria</td>
+                        <td>12-0 (8 KOs)</td>
+                        <td><span class="status-badge contender">Contender</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">3</td>
+                        <td class="rank-fighter">
+                            <img src="./images/bright.jpg" alt="Kevin Lerena">
+                            <span>Kevin Lerena</span>
+                        </td>
+                        <td>South Africa</td>
+                        <td>31-4 (15 KOs)</td>
+                        <td><span class="status-badge contender">Contender</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">4</td>
+                        <td class="rank-fighter">
+                            <img src="./images/Pitius.jpg" alt="Juan Alberts">
+                            <span>Juan Alberts</span>
+                        </td>
+                        <td>South Africa</td>
+                        <td>18-2 (10 KOs)</td>
+                        <td><span class="status-badge contender">Contender</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">5</td>
+                        <td class="rank-fighter">
+                            <img src="./images/ryan.jpg" alt="Raphael Akpejiori">
+                            <span>Raphael Akpejiori</span>
+                        </td>
+                        <td>Nigeria</td>
+                        <td>16-1 (15 KOs)</td>
+                        <td><span class="status-badge contender">Contender</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
-    <section class="section about" id="about">
+    <section class="section about-section" id="about">
         <div class="about-container">
-            <div class="about-header">
-                <h2>About BoxArena</h2>
-                <p>BoxArena is a modern boxing platform built to connect fighters, promoters, and fans through seamless access to boxing events, athlete profiles, rankings, and fight updates.</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>Our Mission</h3>
-                    <p>Our mission is to empower upcoming fighters by giving them visibility while helping fans discover exciting boxing talent. We aim to make boxing information accessible, transparent, and engaging worldwide.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Partner With BoxArena?</h2>
+                    <p>BoxArena is the premier digital platform dedicated to African boxing. We connect stakeholders across the continent's boxing ecosystem — from grassroots development to world championship events.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fi fi-rr-globe"></i>
+                            <div>
+                                <h4>Continental Reach</h4>
+                                <p>Active across all 54 African nations</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fi fi-rr-trophy"></i>
+                            <div>
+                                <h4>Championship Access</h4>
+                                <p>Direct links to WBA, WBC, IBF, WBO title bouts</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fi fi-rr-stats"></i>
+                            <div>
+                                <h4>Data & Analytics</h4>
+                                <p>Real-time fight data, rankings, and audience insights</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fi fi-rr-screen"></i>
+                            <div>
+                                <h4>Digital Exposure</h4>
+                                <p>Multi-platform content reaching 2M+ monthly views</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Become a Partner</a>
                 </div>
-                <div class="about-card">
-                    <h3>What We Do</h3>
-                    <p>We provide real-time fight schedules, fighter profiles, rankings, event promotions, and boxing news — all in one powerful platform designed for the boxing community.</p>
-                </div>
-                <div class="about-card">
-                    <h3>Why Choose Us</h3>
-                    <p>BoxArena delivers a modern user experience, accurate fight updates, and a trusted platform where boxing enthusiasts can stay connected to the sport they love.</p>
+                <div class="about-stats-grid">
+                    <div class="about-stat-card">
+                        <span class="stat-value">50K+</span>
+                        <span class="stat-desc">Registered Fighters</span>
+                    </div>
+                    <div class="about-stat-card">
+                        <span class="stat-value">500+</span>
+                        <span class="stat-desc">Events Yearly</span>
+                    </div>
+                    <div class="about-stat-card">
+                        <span class="stat-value">2M+</span>
+                        <span class="stat-desc">Monthly Reach</span>
+                    </div>
+                    <div class="about-stat-card">
+                        <span class="stat-value">120+</span>
+                        <span class="stat-desc">Sponsor Brands</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 All Rights Reserved | BoxArena</p>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="./images/logo.png" alt="BoxArena">
+                    <p>Africa's premier boxing platform connecting fighters, promoters, sponsors, and fans across the continent.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#fighters">Fighters</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#rankings">Rankings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Partners</h4>
+                    <ul>
+                        <li><a href="#">WBA Africa</a></li>
+                        <li><a href="#">NBF Nigeria</a></li>
+                        <li><a href="#">Boxing SA</a></li>
+                        <li><a href="#">African Boxing Union</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>info@boxarena.africa</p>
+                    <p>+234 800 BOXARENA</p>
+                    <div class="footer-social">
+                        <i class="fi fi-brands-instagram"></i>
+                        <i class="fi fi-brands-twitter"></i>
+                        <i class="fi fi-brands-facebook"></i>
+                        <i class="fi fi-brands-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BoxArena. All Rights Reserved. | Official WBA Africa Digital Partner</p>
+            </div>
         </div>
     </footer>
 
